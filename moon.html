@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(image/bg-img-01.jpg);
+      display: flex;
+      flex: justify;
+      overflow: hidden;
+    }
+
+    .sun {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      border: 4px solid #e8d90e;
+      background: rgb(255, 17, 0);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+    }
+
+    .earthorbit {
+      position: absolute;
+      top: -185px;
+      left: -180px;
+      width: 450px;
+      height: 450px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+    }
+
+    .earth {
+      position: absolute;
+      top: 92px;
+      left: 248px;
+      width: 30px;
+      height: 30px;
+      background: blue;
+      border-radius: 50%;
+      animation: earthOrbit 32s infinite linear;
+      transform-origin: -200px -50px;
+      color: #ffffff;
+
+    }
+
+    .moonorbit {
+      position: absolute;
+      top: -35px;
+      left: -38px;
+      width: 100px;
+      height: 100px;
+      border: 2px solid #757070;
+      border-radius: 50%;
+    }
+
+    .moon {
+      position: absolute;
+      top: 74px;
+      left: 75px;
+      width: 20px;
+      height: 20px;
+      background: rgb(255, 255, 255);
+      border-radius: 50%;
+      animation: moonOrbit 1s infinite linear;
+      transform-origin: -26px -26px;
+    }
+
+    .mercury-orbit {
+      position: absolute;
+      top: -78px;
+      left: -78px;
+      width: 250px;
+      height: 250px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+    }
+
+    .mercury {
+      position: absolute;
+      top: 200px;
+      left: 200px;
+      width: 30px;
+      height: 30px;
+      background: rgb(238, 106, 24);
+      border-radius: 50%;
+      animation: mercuryOrbit 20s infinite linear;
+      transform-origin: -74px -74px;
+      color: #ffffff;
+
+    }
+
+    .jupitor-orbit {
+      position: absolute;
+      top: -310px;
+      left: -310px;
+      width: 700px;
+      height: 700px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+
+    }
+
+    .jupitor {
+      position: absolute;
+      top: 65px;
+      left: 65px;
+      width: 80px;
+      height: 80px;
+      background: rgb(246, 244, 194);
+
+      border-radius: 50%;
+      animation: jupitorOrbit 73s infinite linear;
+      transform-origin: 288px 288px;
+      color: #ffffff;
+    }
+
+    .saturn-orbit {
+      position: absolute;
+      top: -460px;
+      left: -460px;
+      width: 1000px;
+      height: 1000px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+
+    }
+
+    .saturn {
+      position: absolute;
+      top: 93px;
+      left: 93px;
+      width: 95px;
+      height: 95px;
+      background: rgb(92, 88, 88);
+      border-radius: 50%;
+      animation: saturnOrbit 98s infinite linear;
+      transform-origin: 402px 402px;
+      color: #ffffff;
+    }
+
+    .saturn-ring {
+      position: absolute;
+      top: -55px;
+      left: -35px;
+      height: 175px;
+
+      width: 135px;
+      border: 15px solid #757575;
+      border-radius: 50%;
+    }
+
+
+    .urenas-orbit {
+      position: absolute;
+      top: -660px;
+      left: -660px;
+      width: 1400px;
+      height: 1400px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+
+    }
+
+    .urenas {
+      position: absolute;
+      top: 152px;
+      left: 152px;
+      width: 95px;
+      height: 95px;
+      background: rgb(0, 229, 255);
+      border-radius: 50%;
+      animation: urenasOrbit 138s infinite linear;
+      transform-origin: 550px 550px;
+
+    }
+
+
+    @keyframes mercuryOrbit {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(1turn);
+      }
+    }
+
+    @keyframes earthOrbit {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(1turn);
+      }
+    }
+
+    @keyframes moonOrbit {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(1turn);
+      }
+    }
+
+    @keyframes jupitorOrbit {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(1turn);
+      }
+    }
+
+    @keyframes saturnOrbit {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(1turn);
+      }
+    }
+
+    @keyframes urenasOrbit {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(1turn);
+      }
+    }
+  </style>
+  <title>Solar System</title>
+</head>
+
+<body>
+  <div class="sun">
+    <div class="earthorbit"></div>
+
+
+    <div class="earth">
+      <div class="moonorbit">
+        <div class="moon"></div>
+      </div>
+    </div>
+
+    <div class="mercury-orbit">
+      <div class="mercury"></div>
+
+    </div>
+
+    <div class="jupitor-orbit">
+      <div class="jupitor"></div>
+    </div>
+    <div class="saturn-orbit">
+      <div class="saturn">
+
+        <div class="saturn-ring"></div>
+
+      </div>
+    </div>
+    <div class="urenas-orbit">
+      <div class="urenas"></div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+</body>
+
+</html>

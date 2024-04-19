@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Generator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    #generateBtn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    #imageContainer {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <button id="generateBtn" onclick="generateImage()">Generate Image</button>
+    <div id="imageContainer"></div>
+
+    <script>
+        function generateImage() {
+            var imageURL = prompt("Enter the URL of the image:");
+            if (imageURL) {
+                var imageContainer = document.getElementById('imageContainer');
+                var imgElement = document.createElement('img');
+                imgElement.src = imageURL;
+                imgElement.style.maxWidth = '100%';
+                imgElement.style.height = 'auto';
+                imageContainer.innerHTML = '';
+                imageContainer.appendChild(imgElement);
+            } else {
+                alert("Please enter a valid image URL.");
+            }
+        }
+    </script>
+</body>
+</html>

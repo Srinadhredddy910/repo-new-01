@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="image/pic-1.jpg" style="boder:50%" ;>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media screen and (min-width: 750px) {
+            body {
+
+                background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(image/bg-img-01.jpg);
+
+
+                margin: 0%;
+                display: flex;
+                height: 100vh;
+                padding: 0%;
+                text-decoration: none;
+                list-style: none;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+
+                font-family: Arial, Helvetica, sans-serif;
+
+
+            }
+
+            .total {
+
+                background-repeat: no-repeat;
+
+                width: 100%;
+                height: auto;
+
+            }
+
+            .sidebar {
+                top: 0%;
+                width: 19%;
+                float: left;
+                height: 100vh;
+
+                background-color: rgb(0, 0, 0);
+                position: fixed;
+                overflow-y: scroll;
+                overflow: auto;
+
+
+            }
+
+            .sidebar ul {
+                padding-top: 120px;
+                /* padding-left: 80px; */
+                text-align: center;
+            }
+
+            .sidebar ul li a {
+                color: #ffffff;
+                text-decoration: none;
+                margin-top: 20px;
+
+
+
+            }
+
+            .sidebar ul li a:hover {
+                background-color: rgb(255, 255, 255);
+                color: #000000;
+            }
+
+            .sidebar ul li {
+                padding-top: 20px;
+
+            }
+
+            .sidebar .user {
+                width: 100%;
+                height: 200px;
+            }
+
+            .sidebar .user img {
+                width: 70%;
+                border-radius: 50%;
+                border: 10px solid #ffffff;
+                ;
+                margin-left: 35px;
+                margin-top: 25px;
+
+            }
+
+            .sidebar .user .name {
+                text-align: center;
+                padding-left: 20px;
+                color: #ffffff;
+                font-size: larger;
+                font-weight: bold;
+
+            }
+
+            .sidebar .user .icon {
+                width: 100%;
+                height: auto;
+                padding-left: 14px;
+                padding-top: 20px;
+
+            }
+
+            .sidebar .user .icon a i {
+                color: #ffffff;
+                padding: 7px;
+                font-size: 20px;
+                border: 3px solid #000000;
+                border-radius: 50%;
+                background-color: rgb(60, 55, 112);
+            }
+
+            .total .sidebar .foot-side p {
+                float: left;
+                color: #ffffff;
+                width: 100%;
+                margin-top: 130px;
+                padding-left: 20px;
+                ;
+            }
+
+            .total .content {
+                width: 81%;
+                float: right;
+            }
+
+            .one {
+                width: 80%;
+                height: auto;
+
+                padding-left: 40px;
+
+
+            }
+
+
+            .one h2 {
+                color: #ff0000;
+                padding-top: 20px;
+                font-size: 35px;
+
+            }
+
+            .one p {
+                color: rgb(0, 179, 255);
+                padding-top: 20px;
+                font-size: 25px;
+
+            }
+
+            .one p:hover {
+                filter: brightness(3);
+                color: #ffffff;
+
+
+
+            }
+
+            .one h2:hover {
+                color: #ffffff;
+                /* font-size: 20px; */
+
+
+
+            }
+
+            #home {
+
+                height: 500px;
+                padding: 20px;
+            }
+
+            #about {
+                margin-top: 200px;
+                height: 500px;
+                padding: 20px;
+            }
+
+            #contact {
+                margin-top: 200px;
+                height: 500px;
+                padding: 20px;
+            }
+
+            #skills {
+                margin-top: 200px;
+                height: 500px;
+                padding: 20px;
+            }
+
+            #edu {
+                margin-top: 200px;
+                height: 500px;
+                padding: 20px;
+            }
+
+            #hobbies {
+                margin-top: 200px;
+                height: 500px;
+                padding: 20px;
+            }
+
+            #interests {
+                margin-top: 200px;
+                height: 500px;
+                padding: 20px;
+            }
+
+            #others {
+                margin-top: 200px;
+                height: 500px;
+                padding: 20px;
+            }
+        }
+
+
+
+        @media screen and (min-width: 220px) and (max-width: 750px) {
+            body {
+                background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(image/bg-img-01.jpg);
+
+
+                margin: 0%;
+                display: flex;
+                height: 100vh;
+                padding: 0%;
+                text-decoration: none;
+                list-style: none;
+                background-repeat: repeat;
+                background-attachment: fixed;
+                background-size: contain;
+
+                font-family: Arial, Helvetica, sans-serif;
+
+
+            }
+
+            .total {
+
+                background-repeat: no-repeat;
+
+                width: 100%;
+                height: auto;
+
+            }
+
+            .sidebar {
+                top: 0%;
+                width: 25%;
+                float: left;
+                height: 100vh;
+
+                background-color: rgb(0, 0, 0);
+                position: fixed;
+                overflow-y: scroll;
+                overflow: auto;
+
+
+            }
+
+            .sidebar ul {
+                padding-top: 120px;
+                /* padding-left: 80px; */
+                text-align: center;
+                margin-left: -50px;
+            }
+
+            .sidebar ul li a {
+                color: #ffffff;
+                text-decoration: none;
+                margin-top: 20px;
+
+
+            }
+
+            .sidebar ul li a:hover {
+                background-color: rgb(255, 255, 255);
+                color: #000000;
+            }
+
+            .sidebar ul li {
+                padding-top: 20px;
+
+            }
+
+            .sidebar .user {
+                width: 100%;
+                height: 200px;
+            }
+
+            .sidebar .user img {
+                width: 70%;
+                border-radius: 50%;
+                border: 10px solid #ffffff;
+                ;
+                margin-left: 35px;
+                margin-top: 25px;
+
+            }
+
+            .sidebar .user .name {
+                text-align: center;
+                padding-left: 20px;
+                color: #ffffff;
+                font-size: larger;
+                font-weight: bold;
+
+            }
+
+            .sidebar .user .icon {
+                width: 100%;
+                height: auto;
+                padding-left: 20px;
+                padding-top: 20px;
+
+            }
+
+            .sidebar .user .icon a i {
+                color: #ffffff;
+                padding: 7px;
+                font-size: 20px;
+                border: 3px solid #000000;
+                border-radius: 50%;
+                background-color: rgb(60, 55, 112);
+            }
+
+            .total .sidebar .foot-side p {
+                float: left;
+                color: #ffffff;
+                width: 100%;
+                margin-top: 130px;
+                padding-left: 20px;
+                ;
+            }
+
+            .total .content {
+                width: 75%;
+                float: right;
+                height: 100vh;
+            }
+
+            .one {
+                width: 80%;
+                height: auto;
+
+                padding-left: 40px;
+
+
+            }
+
+
+            .one h2 {
+                color: #ff0000;
+                padding-top: 20px;
+                font-size: 35px;
+
+            }
+
+            .one p {
+                color: rgb(0, 179, 255);
+                padding-top: 20px;
+                font-size: 25px;
+
+            }
+
+            .one p:hover {
+                filter: brightness(3);
+                color: #ffffff;
+
+
+
+            }
+
+            .one h2:hover {
+                color: #ffffff;
+                /* font-size: 20px; */
+
+
+
+            }
+
+            #home {
+
+                height: 1800px;
+                padding: 20px;
+            }
+
+            #about {
+                margin-top: 200px;
+                height: 5800px;
+                padding: 20px;
+            }
+
+            #contact {
+                margin-top: 200px;
+                height: 1800px;
+                padding: 20px;
+            }
+
+            #skills {
+                margin-top: 200px;
+                height: 1800px;
+                padding: 20px;
+            }
+
+            #edu {
+                margin-top: 200px;
+                height: 1800px;
+                padding: 20px;
+            }
+
+            #hobbies {
+                margin-top: 200px;
+                height: 1800px;
+                padding: 20px;
+            }
+
+            #interests {
+                margin-top: 200px;
+                height: 1800px;
+                padding: 20px;
+            }
+
+            #others {
+                margin-top: 1800px;
+                height: 500px;
+                padding: 20px;
+            }
+
+            #others a {
+                list-style: none;
+                text-decoration: none;
+                height: 1800px;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="total">
+
+
+        <div class="sidebar">
+
+            <div class="user"><a href="image/pic-01.jpg">
+                    <img src="image/pic-1.jpg" alt=""></a>
+                <a href="image/pic-01.jpg">
+                    <div class="name">
+                        Srinadh Reddy
+                    </div>
+                </a>
+                <div class="icon">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/srinadh-reddy-ambati-48a701235/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+
+            <ul>
+                <li><a href="#home">Home</a></li><br>
+                <hr>
+                <li><a href="#about">About</a></li><br>
+                <hr>
+                <li><a href="#contact">Contact</a></li><br>
+                <hr>
+                <li><a href="#skills">Skills</a></li><br>
+                <hr>
+                <li><a href="#edu">Education</a></li><br>
+                <hr>
+                <li><a href="#hobbies">Hobbies</a></li><br>
+                <hr>
+                <li><a href="#interests">Interests</a></li><br>
+                <hr>
+                <li><a href="#others">Others</a></li><br>
+                <hr>
+
+            </ul>
+
+            <div class="foot-side">
+                <p>
+                    &copy; Copyright 2024 @ srinadh
+                </p>
+            </div>
+
+        </div>
+
+        <div class="content">
+
+
+
+
+            <div id="home" class="one">
+                <h2>HOME</h2>
+
+                <p>Hi How Are You Guys...!.
+                    I Am Srinadh Reddy Ambati ,and i am here to share my details and my interests with you...
+                    i will see you there...!
+                </p>
+                <h2 id="demo" style="color: #ffffff;font-size: 28px;"></h2>
+                <script>
+                    var i = 0;
+                    var wordIndex = 0;
+                    var txt = ['Hey.....Hello.....', 'How......', 'Are......', 'You.....', 'Man.....']; /* The text */
+                    var speed = 200; /* The speed/duration of the effect in milliseconds */
+                    var isDeleting = false;
+
+                    function typeWriter() {
+                        if (i <= txt[wordIndex].length && !isDeleting) {
+                            document.getElementById("demo").innerHTML = txt[wordIndex].substring(0, i + 1);
+                            i++;
+                        } else if (i > 0 && isDeleting) {
+                            document.getElementById("demo").innerHTML = txt[wordIndex].substring(0, i - 1);
+                            i--;
+                        }
+
+                        if (i == txt[wordIndex].length) {
+                            isDeleting = true;
+                        } else if (i == 0 && isDeleting) {
+                            isDeleting = false;
+                            wordIndex = (wordIndex + 1) % txt.length;
+                        }
+
+                        setTimeout(typeWriter, speed);
+                    }
+                    typeWriter();
+                </script>
+            </div>
+            <div id="about" class="one">
+                <h2>ABOUT</h2>
+                <p>Basically i am a fresher graduated in 2023 and have interest in IT field...
+                    So do you want know anything about me then come and check all this page fully.....
+                </p>
+            </div>
+            <div id="contact" class="one">
+                <h2>Contact</h2>
+                <p>My contact Numbers are : <br><br>+91-9391634492 <br> +91-9553925092 <br><br> email-id : <br>
+                    srinadhreddy391@gmail.com</p>
+            </div>
+            <div id="skills" class="one">
+                <h2>Skills</h2>
+                <p>Are you eager to know about my Skills.! Okay then here are they:<br><br><br>
+                    Azure DevOps :<br>Azure CI/CD pipelines , repos ,git ,terraform , yaml...etc..!!<br><br>
+                    Front End Development : <br>HTML ,CSS ,Javascript ,ReactJs<br><br>
+                    Service Now ITSM Developer : <br>Client Side Scripts ,Server Side Scripts , ACL's
+                    ,Updateset's...etc...!<br>
+                </p>
+            </div>
+            <div id="edu" class="one">
+                <h2>Education</h2>
+                <p>I did my 10th class schooling from SNMZP High School,Bhadrachalam in (2016-2017)<br><br>
+                    I've completed my diploma in Civil Engineering From KLR College of Engg &
+                    Technology(2017-2020)<br><br>
+                    Recently i've completed my B.Tech in Civil Engg From Vikas Group Of Institutions(2020-2023)</p>
+            </div>
+            <div id="hobbies" class="one">
+                <h2>Hobbies</h2>
+                <p>My Hobbies are Riding Bike <br><br> Learning Programing Languages<br><br> Watching Movies and
+                    listening To Music<br><br>Playing Online Games</p>
+            </div>
+            <div id="interests" class="one">
+                <h2>Interests</h2>
+                <p>I am mainly interested in computer languages<br><br> doing new things with my knowledge</p>
+            </div>
+            <div id="others" class="one">
+                <a href="image/SRINADH REDDY_AMBATI_CV.pdf">
+                    <h2>Others<object data="image\SRINADH REDDY_AMBATI_CV.pdf" type="application/pdf" width="100%"
+                            height="500px"></h2>
+                    <p>My Resume Is Here<br><br>Have a Look Here...! Click here to see resume...!</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
